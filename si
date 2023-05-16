@@ -1,0 +1,52 @@
+#Clase Flor{
+#Atributos Propiedades o Instancias
+#Color;
+#Tamaño;
+#Especie;
+#Numero de hojas;
+#Numero de espinas;
+#Métodos o Funciones
+#Generar semillas(){
+  #fprintf("La flor genera semillas");
+#};
+  
+#};
+#Ejemplo CREACIÓN DE OBJETOS
+class carro:
+  def  __init__(self):
+   #definición de atributos
+   self.Color = ""
+   self.Marca = ""
+   self.Precio = float()
+   self.Velocidad = 0
+
+   #definición de metodos o funciones del carro
+  def Encender(self):
+     print("El carro está encendiendo")
+  def Apagar(self):
+    print("El carro se está apagando")
+  def Frenar(self):
+    print("El carro está frenando")
+  def Acelerar(self):
+    print("El carro se está acelerando")
+
+f1=carro()#instanciamiento de la clase
+f1.Color = "Negro"
+f1.Precio = 80000000
+f1.Marca = "Red Bull"
+
+f1.Encender()
+print("El color del auto es:",f1.Color)
+bmw = carro()
+bmw.Acelerar()   
+bmw.Precio =150000000
+if (f1.Precio > bmw.Precio):
+  print("Mejor me compro el BMW y pago Motoratón")
+  print("Porque el f1 vale",f1.Precio)
+else:
+  print("Ahora aguanta comprar un Fórmula 1")
+print("El precio es de tipo:",type(bmw.Precio))#que tipo de variable es
+print("El color es de tipo:",type(bmw))#que tipo de dato es
+
+
+  
